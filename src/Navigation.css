@@ -1,0 +1,61 @@
+img {
+    width: 5rem;
+}
+.logo {
+    
+    font-family: 'Mooli', sans-serif;
+    font-size: 0.8rem;
+}
+
+
+.dropdown-content {
+    float: right;
+    display: flex;
+    gap: 1rem;
+}
+
+.dropdown-content :link {
+    text-decoration: none;
+}
+.dropdown-content li {
+    list-style-type: none;
+    padding: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+
+
+@media  screen and (min-width: 551px) {
+    .dropdown i{
+        display: none;
+    }
+    
+}
+
+
+@media  screen and (max-width: 550px) {
+    .dropdown i{
+       float: left;
+    }
+    .dropdown {
+        position: relative;
+        display: inline-table;
+        
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+      }
+      
+      .dropdown:hover .dropdown-content {
+       display: flex;
+      }
+    
+}

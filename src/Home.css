@@ -1,0 +1,26 @@
+
+header {
+    font-family: 'Mooli', sans-serif;
+    text-align: center;
+    margin: 2rem;
+}
+.introduction {
+   padding: 5rem;
+    font-family: 'Martian Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   text-align: center;
+    
+}
+.breif {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   text-align: center;
+    font-family: 'Martian Mono', monospace;
+}
+
+   
+   
+    

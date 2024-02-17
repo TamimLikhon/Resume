@@ -1,0 +1,105 @@
+.skill-container {
+    height: 22rem;
+}
+.skill-container ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    background-color: #f7f7f7;
+    width: 50%;
+    height: 90%;
+    margin: 0 auto;
+}
+.skill-container ul li {
+    padding: 1rem;
+    font-weight: bold;
+    position: relative;
+}
+.skill-container li::before {
+    content: '';
+    position: absolute;
+    top: 70%; /* Set a valid value here */
+    background-color: #3498db;
+    width: 0%; /* Initial width set to 0 */
+    height: 1rem;
+    border-radius: 1000px;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: forward;
+}
+.skill-container li.html::before {
+    animation: html 3s linear forwards; /* Remove animation-delay */
+}
+.skill-container li.CSS::before {
+    animation: CSS 3s linear forwards; /* Remove animation-delay */
+}
+
+
+@keyframes html {
+    to {
+        width: 90%; /* Set the final width you want for the progress bar */
+        background-color: #b4a9b8;
+    }
+}
+@keyframes CSS {
+    to {
+        width: 78%; /* Set the final width you want for the progress bar */
+         background-color: #b4a9b8;
+    }
+}
+
+.skill-container li.JS::before {
+    animation: JS 3s linear forwards; /* Remove animation-delay */
+}
+
+
+@keyframes JS {
+    to {
+        width: 81%; /* Set the final width you want for the progress bar */
+         background-color: #b4a9b8;
+    }
+}
+
+.skill-container li.React::before {
+    animation: React 3s linear forwards; /* Remove animation-delay */
+}
+
+
+@keyframes React {
+    to {
+        width: 70%; /* Set the final width you want for the progress bar */
+         background-color: #b4a9b8;
+    }
+}
+
+.skill-container li.C::before {
+    animation: C 3s linear forwards; /* Remove animation-delay */
+}
+
+
+@keyframes C {
+    to {
+        width: 55%; /* Set the final width you want for the progress bar */
+         background-color: #b4a9b8;
+    }
+}
+
+.skill-container li.Node::before {
+    animation: Node 3s linear forwards; /* Remove animation-delay */
+}
+
+
+@keyframes Node {
+    to {
+        width: 15%; /* Set the final width you want for the progress bar */
+         background-color: #b4a9b8;
+    }
+}
+
+.skill-intro {
+    display: flex;
+    justify-content: center;
+    font-family: 'Martian Mono', monospace;
+}
+
